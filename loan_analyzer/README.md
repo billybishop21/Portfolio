@@ -6,4 +6,5 @@ Initial push on 6/22/2021
 Second push on 6/26/2021
     part 5 complete with addition of inexpensive_loans.csv
 
-    
+Third push on 6/26/2021
+    revised the part 5 to only show inexpensive loans
