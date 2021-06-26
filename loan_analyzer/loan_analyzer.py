@@ -209,6 +209,6 @@ output_path = Path("inexpensive_loans.csv")
 with open(output_path, 'w', newline='') as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(header)
-    for row in loans:
-        csvwriter.writerow(loan.values())
+    for item in inexpensive_loans:
+        csvwriter.writerow(item.values())
 
