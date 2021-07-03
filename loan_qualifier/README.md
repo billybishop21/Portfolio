@@ -1,19 +1,31 @@
 # Loan Qualifier
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This is a command line application matches applicants with qualifying loans. This qualifier app will save qualifying loans to a CSV file in order to share results as a spreadsheet.
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+This project leverages python 3.9.4 with the following packages:
+
+* [fire](https://github.com/google/python-fire) - For the command line interface, help page and entrypoint.
+
+* [questionary](https://github.com/tmbo/questionary) - For interactive user prompts and dialogs
+
+* [pytest](https://docs.pytest.org/en/stable) - For basic assertion testing of financial calculators and filters, and basic filio.
 
 ---
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+Before running the following application, please install the following dependencies:
 
+```python
+pip install fire
+pip install questionary
+pip install pytest
+pip install mkdocs
+```
 ---
 
 ## Examples
