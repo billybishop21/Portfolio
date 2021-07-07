@@ -54,7 +54,7 @@ def test_filters():
 
     # @TODO: Test the new save_csv code!
     bank_data_filtered = max_loan_size.filter_max_loan_size(loan, bank_data)
-    bank_data_filtered = credit_score.filter_credit_score(credit_score, bank_data_filtered)
+    bank_data_filtered = credit_score.filter_credit_score(current_credit_score, bank_data_filtered)
     bank_data_filtered = debt_to_income.filter_debt_to_income(monthly_debt_ratio, bank_data_filtered)
     bank_data_filtered = loan_to_value.filter_loan_to_value(loan_to_value_ratio, bank_data_filtered)
 
