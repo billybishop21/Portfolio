@@ -17,7 +17,7 @@ def test_save_csv():
     # @TODO: Your code here!
     # Use Path from pathlib to output the test csv to ./data/output/qualifying_loans.csv
     qualifying_loans = "test"
-    csvoutpath = Path('./data/output/qualifying_loans.csv')
+    csvoutpath = Path('./loan_qualifier/data/qualifying_loans.csv')
     
     fileio.save_csv(
         csvoutpath,
@@ -41,7 +41,7 @@ def test_calculate_loan_to_value_ratio():
     assert calculators.calculate_loan_to_value_ratio(210000, 250000) == 0.84
 
 def test_filters():
-    bank_data = fileio.load_csv(Path('./data_copy/daily_rate_sheet.csv'))
+    bank_data = fileio.load_csv(Path('./loan_qualifier/data/daily_rate_sheet.csv'))
     current_credit_score = 750
     debt = 1500
     income = 4000
