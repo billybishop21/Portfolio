@@ -61,3 +61,5 @@ def test_filters():
     print(f"Found {len(bank_data_filtered)} qualifying loans")
 
     assert len(bank_data_filtered) == 6
+
+
