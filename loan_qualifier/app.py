@@ -120,6 +120,7 @@ def save_qualifying_loans(qualifying_loans):
         ).ask()
         save_csv(Path(csvpath), qualifying_loans)
 
+
 def run():
     """The main function for running the script."""
 
