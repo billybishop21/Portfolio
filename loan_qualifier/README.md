@@ -30,22 +30,22 @@ pip install mkdocs
 
 ## Examples
 
-This section should include screenshots, code blocks, or animations showing how your project works.
+Here is an example of the output given provided inputs:
+
+![Loan Qualifier Prompts](../images/example_1.png)
 
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
-
----
+To use the loan qualifier application, clone the repository and run `python app.py` in your Git Bash or Terminal
 
 ## Contributors
 
-In this section, list all the people who contribute to this project; since you may want to be reached by recruiters or potential collaborators, include your contact e-mail, and optionally your LinkedIn or Twitter profile.
+Brought to you by Billy Bishop
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify others what they can and can not do with your source code and files. Use this section to include the licence you want to use.
+TBD

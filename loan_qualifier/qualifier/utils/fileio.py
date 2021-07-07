@@ -29,7 +29,7 @@ def load_csv(csvpath):
             data.append(row)
     return data
 
-def save_csv(csvpath):
+def save_csv(csvpath, data, header=True):
     """Writes the CSV file from path provided.
     
     Args:

@@ -41,7 +41,7 @@ def test_calculate_loan_to_value_ratio():
     assert calculators.calculate_loan_to_value_ratio(210000, 250000) == 0.84
 
 def test_filters():
-    bank_data = fileio.load_csv(Path('./data/output/daily_rate_sheet.csv'))
+    bank_data = fileio.load_csv(Path('./data_copy/daily_rate_sheet.csv'))
     current_credit_score = 750
     debt = 1500
     income = 4000
@@ -60,4 +60,4 @@ def test_filters():
 
     print(f"Found {len(bank_data_filtered)} qualifying loans")
 
-    return bank_data_filtered
+    assert len(bank_data_filtered) == 6
