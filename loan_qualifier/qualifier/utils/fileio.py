@@ -28,3 +28,19 @@ def load_csv(csvpath):
         for row in csvreader:
             data.append(row)
     return data
+
+def save_csv(csvpath):
+    """Writes the CSV file from path provided.
+    
+    Args:
+        csvpath (Path): The csv file path
+        
+    Returns:
+        A csv file containing the list of lists based on the filtered bank data.
+        
+    """
+    with open(csvpath, "w", newline="") as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter=",")
+        if header:
+            csvwriter.writerow(header)
+        csvwriter.writerow(data)
